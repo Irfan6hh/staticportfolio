@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="5;url=https://portfolio-irfan.static2.website/" />
+    <title>Portfolio Pindah</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top left, rgba(91, 133, 199, 0.15), transparent 28%),
+          radial-gradient(circle at top right, rgba(255, 197, 82, 0.08), transparent 25%),
+          linear-gradient(180deg, #070b14 0%, #090d16 42%, #07090f 100%);
+        color: #e5eaf5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+      }
+      .container {
+        max-width: 1000px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.4fr 0.6fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .hero {
+        display: grid;
+        gap: 22px;
+      }
+      .eyebrow {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: #d6a86f;
+        font-size: 0.75rem;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border: 1px solid #d6a86f;
+        border-radius: 50%;
+      }
+      .name {
+        font-size: clamp(3.4rem, 6vw, 6.5rem);
+        line-height: 0.92;
+        font-weight: 600;
+        letter-spacing: -0.05em;
+      }
+      .surname {
+        font-size: clamp(3.4rem, 6vw, 6.5rem);
+        line-height: 0.92;
+        font-style: italic;
+        color: #8aa2c5;
+      }
+      .description {
+        max-width: 640px;
+        color: #c7d0e7;
+        line-height: 1.75;
+        font-size: 1rem;
+      }
+      .cta {
+        margin-top: 1rem;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 16px 28px;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: rgba(255,255,255,0.04);
+        color: #f5f7ff;
+        text-decoration: none;
+        font-size: 0.95rem;
+        letter-spacing: 0.04em;
+        transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+      }
+      .button:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: rgba(255,255,255,0.24);
+        transform: translateY(-1px);
+      }
+      .panel {
+        display: grid;
+        gap: 16px;
+        padding: 32px;
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 24px;
+        background: rgba(11, 15, 26, 0.72);
+        backdrop-filter: blur(18px);
+      }
+      .panel h2 {
+        color: #d6a86f;
+        font-size: 0.95rem;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+      }
+      .panel p {
+        color: #c7d0e7;
+        line-height: 1.7;
+        font-size: 0.98rem;
+      }
+      .note {
+        color: #8aa2c5;
+        font-size: 0.92rem;
+      }
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <div class="eyebrow">Creative Professional • Bandung</div>
+        <div class="name">Irfan</div>
+        <div class="surname">Nurdiansyah</div>
+        <p class="description">
+          Halaman portfolio ini telah pindah ke alamat baru. Anda akan diarahkan secara otomatis dalam beberapa detik.
+          Jika tidak, silakan klik tombol di bawah.
+        </p>
+        <div class="cta">
+          <a class="button" href="https://portfolio-irfan.static2.website/" target="_blank" rel="noreferrer noopener">
+            Lanjut ke Portfolio →
+          </a>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Halaman Pindah</h2>
+        <p>
+          Portfolio Irfan N. sekarang tersedia di alamat baru. Pastikan bookmark atau tautan Anda diperbarui ke:
+        </p>
+        <p class="note">https://portfolio-irfan.static2.website/</p>
+      </div>
+    </div>
+  </body>
+</html>
